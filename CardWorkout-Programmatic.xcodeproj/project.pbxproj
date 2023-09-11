@@ -62,10 +62,10 @@
 				7BB40DDA2AAF4E6900828D69 /* SceneDelegate.swift */,
 				7BB40DEC2AAF509800828D69 /* CardSelectionVC.swift */,
 				7BB40DEE2AAF521B00828D69 /* CWButton.swift */,
+				7BB40DF02AAF7AA200828D69 /* RulesVC.swift */,
 				7BB40DE12AAF4E6A00828D69 /* Assets.xcassets */,
 				7BB40DE32AAF4E6A00828D69 /* LaunchScreen.storyboard */,
 				7BB40DE62AAF4E6A00828D69 /* Info.plist */,
-				7BB40DF02AAF7AA200828D69 /* RulesVC.swift */,
 			);
 			path = "CardWorkout-Programmatic";
 			sourceTree = "<group>";
