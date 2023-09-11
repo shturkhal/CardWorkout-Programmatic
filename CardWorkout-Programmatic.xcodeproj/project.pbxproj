@@ -13,6 +13,7 @@
 		7BB40DE52AAF4E6A00828D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB40DE32AAF4E6A00828D69 /* LaunchScreen.storyboard */; };
 		7BB40DED2AAF509800828D69 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB40DEC2AAF509800828D69 /* CardSelectionVC.swift */; };
 		7BB40DEF2AAF521B00828D69 /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB40DEE2AAF521B00828D69 /* CWButton.swift */; };
+		7BB40DF12AAF7AA200828D69 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB40DF02AAF7AA200828D69 /* RulesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7BB40DE62AAF4E6A00828D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BB40DEC2AAF509800828D69 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
 		7BB40DEE2AAF521B00828D69 /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
+		7BB40DF02AAF7AA200828D69 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 				7BB40DD82AAF4E6900828D69 /* AppDelegate.swift */,
 				7BB40DDA2AAF4E6900828D69 /* SceneDelegate.swift */,
 				7BB40DEC2AAF509800828D69 /* CardSelectionVC.swift */,
+				7BB40DEE2AAF521B00828D69 /* CWButton.swift */,
 				7BB40DE12AAF4E6A00828D69 /* Assets.xcassets */,
 				7BB40DE32AAF4E6A00828D69 /* LaunchScreen.storyboard */,
 				7BB40DE62AAF4E6A00828D69 /* Info.plist */,
-				7BB40DEE2AAF521B00828D69 /* CWButton.swift */,
+				7BB40DF02AAF7AA200828D69 /* RulesVC.swift */,
 			);
 			path = "CardWorkout-Programmatic";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB40DD92AAF4E6900828D69 /* AppDelegate.swift in Sources */,
+				7BB40DF12AAF7AA200828D69 /* RulesVC.swift in Sources */,
 				7BB40DDB2AAF4E6900828D69 /* SceneDelegate.swift in Sources */,
 				7BB40DED2AAF509800828D69 /* CardSelectionVC.swift in Sources */,
 				7BB40DEF2AAF521B00828D69 /* CWButton.swift in Sources */,
@@ -284,7 +288,6 @@
 				INFOPLIST_FILE = "CardWorkout-Programmatic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,7 +315,6 @@
 				INFOPLIST_FILE = "CardWorkout-Programmatic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
