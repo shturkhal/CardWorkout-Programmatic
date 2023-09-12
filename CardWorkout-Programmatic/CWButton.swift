@@ -9,11 +9,13 @@ import UIKit
 
 class CWButton: UIButton {
 
+    // переписуємо ініт за замовчуванням
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
     
+    // зʼявляється автоматично
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -26,6 +28,7 @@ class CWButton: UIButton {
         configure()
     }
     
+    // налаштування кнопки
     func configure() {
         layer.cornerRadius = 8
         titleLabel?.font = .systemFont(ofSize: 19, weight: .bold)

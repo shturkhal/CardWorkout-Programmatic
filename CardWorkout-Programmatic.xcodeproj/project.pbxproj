@@ -14,6 +14,7 @@
 		7BB40DED2AAF509800828D69 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB40DEC2AAF509800828D69 /* CardSelectionVC.swift */; };
 		7BB40DEF2AAF521B00828D69 /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB40DEE2AAF521B00828D69 /* CWButton.swift */; };
 		7BB40DF12AAF7AA200828D69 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB40DF02AAF7AA200828D69 /* RulesVC.swift */; };
+		7BBFE5FF2AB03EDF000813DE /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBFE5FE2AB03EDF000813DE /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7BB40DEC2AAF509800828D69 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
 		7BB40DEE2AAF521B00828D69 /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
 		7BB40DF02AAF7AA200828D69 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
+		7BBFE5FE2AB03EDF000813DE /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7BB40DEC2AAF509800828D69 /* CardSelectionVC.swift */,
 				7BB40DEE2AAF521B00828D69 /* CWButton.swift */,
 				7BB40DF02AAF7AA200828D69 /* RulesVC.swift */,
+				7BBFE5FE2AB03EDF000813DE /* Deck.swift */,
 				7BB40DE12AAF4E6A00828D69 /* Assets.xcassets */,
 				7BB40DE32AAF4E6A00828D69 /* LaunchScreen.storyboard */,
 				7BB40DE62AAF4E6A00828D69 /* Info.plist */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BBFE5FF2AB03EDF000813DE /* Deck.swift in Sources */,
 				7BB40DD92AAF4E6900828D69 /* AppDelegate.swift in Sources */,
 				7BB40DF12AAF7AA200828D69 /* RulesVC.swift in Sources */,
 				7BB40DDB2AAF4E6900828D69 /* SceneDelegate.swift in Sources */,
