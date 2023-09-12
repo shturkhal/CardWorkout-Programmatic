@@ -10,9 +10,9 @@ import UIKit
 class CardSelectionVC: UIViewController {
     //MARK: create new custom elements
     let cardImageView = UIImageView()
-    let stopButton = CWButton(backgroundColor: .systemRed, title: "Stop!")
-    let resetButton = CWButton(backgroundColor: .systemGreen, title: "Reset")
-    let rulesButton = CWButton(backgroundColor: .systemBlue, title: "Rules")
+    let stopButton = CWButton(color: .systemRed, title: "Stop!", systemImageName: "stop.circle")
+    let resetButton = CWButton(color: .systemGreen, title: "Reset", systemImageName: "autostartstop.trianglebadge.exclamationmark")
+    let rulesButton = CWButton(color: .systemBlue, title: "Rules", systemImageName: "text.book.closed")
     var timer: Timer!
     var cards: [UIImage] = Card.allValues
     
@@ -31,10 +31,29 @@ class CardSelectionVC: UIViewController {
         timer.invalidate()
     }
     
+    //MARK: Logic
+    @objc func presentRulesVC() {
+        present(RulesVC(), animated: true)
+    }
+    @objc func restartAll() {
+        timer.invalidate()
+        startTimer()
+    }
+    @objc func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
+    }
+    @objc func showRandomImage() {
+        cardImageView.image = cards.randomElement() ?? UIImage(named: "ace_of_spades")
+    }
+    @objc func stopButtonTapped() {
+        timer.invalidate()
+    }
     func configureUI() {
         configureCardImageView()
     }
   
+    
+    //MARK: Constraints for buttons
     func configureCardImageView() {
         view.addSubview(cardImageView)
         cardImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -50,9 +69,7 @@ class CardSelectionVC: UIViewController {
 
     func configureStopButton() {
         view.addSubview(stopButton)
-        stopButton.setImage(UIImage(systemName: "stop.circle"), for: .normal)
-        
-        
+      
         stopButton.addTarget(self, action: #selector(stopButtonTapped), for: .touchUpInside)
         NSLayoutConstraint.activate([
             stopButton.widthAnchor.constraint(equalToConstant: 260),
@@ -63,8 +80,7 @@ class CardSelectionVC: UIViewController {
     }
     func configureResetButton() {
         view.addSubview(resetButton)
-        resetButton.setImage(UIImage(systemName: "autostartstop.trianglebadge.exclamationmark"), for: .normal)
-        
+
         resetButton.addTarget(self, action: #selector(restartAll), for: .touchUpInside)
         NSLayoutConstraint.activate([
             resetButton.widthAnchor.constraint(equalToConstant: 115),
@@ -75,7 +91,6 @@ class CardSelectionVC: UIViewController {
     }
     func configureRulesButton() {
         view.addSubview(rulesButton)
-        rulesButton.setImage(UIImage(systemName: "text.book.closed"), for: .normal)
         
         rulesButton.addTarget(self, action: #selector(presentRulesVC), for: .touchUpInside)
         NSLayoutConstraint.activate([
@@ -85,20 +100,5 @@ class CardSelectionVC: UIViewController {
             rulesButton.topAnchor.constraint(equalTo: stopButton.bottomAnchor, constant: 20)
                                     ])
     }
-    @objc func presentRulesVC() {
-        present(RulesVC(), animated: true)
-    }
-    @objc func restartAll() {
-        timer.invalidate()
-        startTimer()
-    }
-    func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
-    }
-    @objc func showRandomImage() {
-        cardImageView.image = cards.randomElement() ?? UIImage(named: "ace_of_spades")
-    }
-    @objc func stopButtonTapped() {
-        timer.invalidate()
-    }
+  
 }
